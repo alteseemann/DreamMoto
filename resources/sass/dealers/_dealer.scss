@@ -1,0 +1,38 @@
+.dealer-wrap {
+  .moto-brand-item {
+    font-weight: bold;
+  }
+
+  .dealer-address, .dealer-phone, .dealer-site {
+    padding-left: 30px;
+    position: relative;
+
+    &:before {
+      font-family: "Font Awesome 5 Pro";
+      font-weight: 300;
+      position: absolute;
+      left: 1px;
+      top: -4px;
+      font-size: 1.3rem;
+    }
+  }
+
+  .dealer-address {
+    &:before {
+      content: "\f3c5";
+    }
+  }
+
+  .dealer-phone {
+    &:before {
+      content: "\f095";
+    }
+  }
+
+  .dealer-site {
+    &:before {
+      content: "\f0ac";
+    }
+  }
+
+}

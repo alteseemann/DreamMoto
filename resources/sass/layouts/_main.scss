@@ -1,0 +1,362 @@
+h1 {
+  @media (max-width: 992px) {
+    font-size: 1.5rem;
+  }
+}
+
+.breadcrumb {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 10px;
+  display: block;
+  padding: 0;
+
+  @media (max-width: 575.98px) {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
+
+.link {
+  color: $blue;
+}
+
+.brands-list, .product-list {
+  columns: 4;
+  column-rule: 1px solid $borders;
+  @media (max-width: 767.98px) {
+    columns: 3;
+  }
+  @media (max-width: 575.98px) {
+    columns: 2;
+  }
+}
+
+.input-group-text {
+  background-color: #ced4da;
+}
+
+
+#header {
+  .navbar-top {
+
+    .dropdown-menu {
+      position: absolute;
+    }
+
+    .container {
+      justify-content: unset;
+
+      @media (max-width: 992px) {
+        position: relative;
+        .login-link {
+          position: absolute;
+          top: -3px;
+          right: 1rem;
+        }
+        .list-top-menu {
+          padding-bottom: 0.25rem;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .login-link {
+          right: 0;
+        }
+      }
+    }
+
+    .navbar-toggler {
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0);
+    }
+
+    .nav-link-top {
+      letter-spacing: .02rem;
+      padding: 0.6rem 1rem !important;
+      color: rgba(255, 255, 255, 1) !important;
+      @media (max-width: 1200px) {
+        padding: 0.6rem .6rem !important;
+      }
+    }
+
+    .user-login-link {
+      display: flex;
+      position: relative;
+      padding-left: 2.5rem !important;
+    }
+
+    .user-login-link:before {
+      font-family: "Font Awesome 5 Pro";
+      content: "\F007";
+      font-weight: 300;
+      position: absolute;
+      left: 15px;
+      font-size: 1.3rem;
+      align-self: center;
+    }
+
+    .nav-link-top-normal {
+      letter-spacing: unset;
+    }
+
+    .nav-link-top:hover {
+      background-color: #fff !important;
+      color: $accent !important;
+    }
+
+    .nav-item.active {
+      .nav-link-top {
+        &:before {
+          position: absolute;
+          content: " ";
+          top: 0;
+          left: 1rem;
+          right: 1rem;
+          height: 2px;
+          background: #fff;
+        }
+
+        @media (max-width: 992px) {
+          &:before {
+            top: unset;
+            bottom: 0;
+          }
+        }
+
+        @media (max-width: 1200px) {
+          &:before {
+            left: .6rem;
+            right: .6rem;
+          }
+          padding: 0.6rem .6rem !important;
+        }
+      }
+    }
+  }
+
+  .nav-top {
+    .nav-item-dop {
+      .nav-link-dop {
+        padding: 0.6rem 0;
+      }
+
+      .active {
+        opacity: 1;
+      }
+
+      .active:after {
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        bottom: -1px;
+        left: 0;
+        height: 2px;
+        content: " ";
+        background: $accent;
+      }
+    }
+
+    .select-city {
+      padding: 0.6rem 0;
+      display: flex;
+      position: relative;
+      padding-left: 2rem !important;
+
+      @media (max-width: 500px) {
+        padding-left: 1rem !important;
+      }
+    }
+
+    .select-city:before {
+      font-family: "Font Awesome 5 Pro";
+      content: '\f601';
+      font-weight: 300;
+      position: absolute;
+      left: 0;
+      font-size: 1.3rem;
+      align-self: center;
+    }
+
+    .compare-btn {
+      margin-left: 1.5rem;
+      display: flex;
+      position: relative;
+      padding-left: 2rem !important;
+      height: 100%;
+
+      &:before {
+        font-family: "Font Awesome 5 Pro";
+        content: '\f24d';
+        font-weight: 300;
+        position: absolute;
+        left: 0;
+        font-size: 1.3rem;
+        align-self: center;
+      }
+
+      @media screen and (max-width: 400px) {
+        margin-left: 1.25rem;
+        padding-left: 1rem !important;
+      }
+    }
+
+    .icon-btn {
+      font-size: 1.3rem;
+    }
+  }
+
+}
+
+button:focus {
+  outline: none;
+}
+
+footer {
+  background-color: #4f5a6e;
+  color: #a7b3cb;
+  font-size: .8em;
+
+  .alpha {
+    color: #fff;
+  }
+
+  a.city-link, a.message-link {
+    color: #a7b3cb;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .call-back {
+    align-self: center;
+    position: relative;
+  }
+
+  a.message-link {
+    padding-left: 25px;
+
+    &:before {
+      font-family: "Font Awesome 5 Pro";
+      content: '\f658';
+      font-weight: 300;
+      position: absolute;
+      left: 0;
+      top: -5px;
+      font-size: 1.1rem;
+      align-self: center;
+    }
+  }
+
+  .cities-wrap {
+    columns: 5;
+
+    @media screen and (max-width: 768px) {
+      columns: 3;
+    }
+
+    @media screen and (max-width: 460px) {
+      columns: 2;
+    }
+
+    .city-alpha {
+      padding: 0 20px 0 0;
+      margin-bottom: 5px;
+      break-inside: avoid;
+
+      @media screen and (max-width: 460px) {
+        padding: 0;
+      }
+
+    }
+  }
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.btn-spinner {
+  position: relative;
+  color: transparent !important;
+
+  .my-spinner {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+  }
+}
+
+.input-group {
+  .filter-select {
+    cursor: pointer;
+  }
+}
+
+.input-group-filter {
+  .input-group-text {
+    border-color: rgba(21, 126, 225, .5);
+    background-color: #eef4fa;
+
+  }
+
+  .custom-select {
+    border-color: rgba(21, 126, 225, .5);
+
+    &:hover {
+      border-color: rgba(21, 126, 225, 1)
+    }
+  }
+}
+
+.multiselect {
+  font-size: .9rem !important;
+}
+
+.multiselect__tags {
+  border-radius: .25rem;
+  border-color: #ced4da;
+}
+
+.multiselect__placeholder {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.multiselect__input {
+  margin-bottom: 0;
+}
+
+#breadcrumb {
+  left: unset !important;
+  z-index: 200;
+}
+
+#breadcrumb.is-sticky {
+  top: -4px !important;
+  overflow: hidden;
+
+  p.breadcrumb-title {
+    background-color: $accent;
+    color: #fff;
+    padding-bottom: .3rem !important;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.list-group-flush .list-group-item:hover {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.12);
+  border-color: #fff;
+  background-color: #fff;
+}
+
+.border-top-blue {
+  border-top: 4px solid #3490dc;
+}

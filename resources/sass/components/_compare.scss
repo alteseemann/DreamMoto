@@ -1,0 +1,29 @@
+span.compare-count {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-size: .6rem;
+    font-weight: bold;
+    background-color: #e3342f;
+    color: #fff;
+    padding: 4px 3px;
+    line-height: 1;
+    z-index: 10;
+    border-radius: 50px;
+    text-align: center;
+    min-width: 17px;
+
+    @media screen and (max-width: 400px) {
+        right: -10px;
+    }
+}
+
+span.moto-count {
+    float: right;
+    padding: 1px 8px 1px 7px;
+    font-size: .8rem;
+    background-color: #3490dc;
+    color: #fff;
+    border-radius: 15px;
+    margin-left: 1rem;
+}

@@ -1,0 +1,36 @@
+//Всплывающие окна уведомлений
+@import 'notifications';
+
+@import 'layouts/main';
+
+//^^^^^^^^Страницы
+//Главная
+@import 'welcome/welcome';
+
+//Дилеры
+@import 'dealers/dealers';
+@import 'dealers/dealer';
+
+//Каталог
+@import 'catalog/catalog';
+
+//Продукт каталога
+@import 'catalog/product';
+
+//сравнение моделей
+@import 'compare/compare';
+
+//^^^^^^^^Компоненты
+//Выбор города
+@import 'components/selectcity';
+//Слайдер объявлений и моделей каталога
+@import 'components/motoslider';
+//Добавление продукта в каталог
+@import 'components/product_add';
+//кнопка сравнение
+@import 'components/compare';
+//стили личного кабинета
+@import 'personal_settings/personal';
+//страница просмотра объявлений
+@import 'sales/sale';
+

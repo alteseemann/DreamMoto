@@ -1,0 +1,114 @@
+.catalog-wrap {
+    .text-link {
+        color: $blue;
+    }
+
+    .moto-description {
+        line-height: 1.5;
+        font-size: .8rem;
+    }
+
+    .sort-label {
+        width: 50px;
+
+        &:before {
+            font-family: "Font Awesome 5 Pro";
+            content: "\F160";
+            font-weight: 300;
+            position: absolute;
+            left: 5px;
+            font-size: 1.3rem;
+            align-self: center;
+            padding: 0 10px;
+        }
+    }
+
+    .filter-label {
+        width: 50px;
+
+        &:before {
+            font-family: "Font Awesome 5 Pro";
+            content: "\f0b0";
+            font-weight: 300;
+            position: absolute;
+            left: 5px;
+            font-size: 1.3rem;
+            align-self: center;
+            padding: 0 10px;
+        }
+    }
+
+    .class-item {
+        &:hover {
+            box-shadow: 0 1px 10px rgba(0, 0, 0, .12);
+            border: 1px solid rgba(0, 0, 0, 0);
+        }
+    }
+
+    .catalog-item {
+        border: none;
+        border-radius: 5px;
+        overflow: hidden;
+
+        &:hover {
+            box-shadow: 0 1px 10px rgba(0, 0, 0, .12);
+
+            &:after {
+                z-index: -1;
+                background-color: rgba(255, 255, 255, 1);
+            }
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    .price-catalog, .price-catalog-none {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-height: 25px;
+        color: white;
+        background-color: #3490dc;
+        z-index: 0;
+
+        span {
+            padding: 0.25rem 1rem 0.25rem 0;
+        }
+
+        &:before {
+            position: absolute;
+            content: "";
+            display: block;
+            top: 0;
+            left: -8px;
+            height: 100%;
+            width: 33px;
+            background-color: #1bc744;
+            transform: skew(-23deg, 0deg);
+            z-index: -1;
+        }
+    }
+
+    .price-catalog-none {
+        opacity: .7;
+
+        &:before {
+            background-color: #3490dc;
+            left: -15px;
+        }
+    }
+
+    .moto-description {
+        p {
+            margin-bottom: .5rem;
+        }
+    }
+}

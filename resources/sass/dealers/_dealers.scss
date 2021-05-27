@@ -1,0 +1,8 @@
+.dealer {
+  transition: background-color .1s;
+
+  &:hover {
+    background-color: #f7f7f7;
+  }
+
+}

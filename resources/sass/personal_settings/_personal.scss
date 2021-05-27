@@ -1,0 +1,161 @@
+//сайд-бар на странице настроек
+.list5a {
+    padding:0;
+    list-style: none;
+}
+.list5a:hover {
+    cursor: pointer;
+}
+.list5a li {
+    position: relative;
+    padding: 10px 30px;
+    background: linear-gradient(to left, #ADCEE9 0%, #FFF, #ADCEE9);
+    border: 2px solid #337AB7;
+    color: #506a6b;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0, .2);
+    margin-bottom: 5px;
+    text-align:center;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+.list5a li:before {
+    content: "";
+    position:absolute;
+    width: 0;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background: linear-gradient(to left, #EBF3FA 0%, #FFF, #EBF3FA);
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: -1;
+}
+.list5a li:hover:before {
+    width: 100%;
+    opacity: 1;
+}
+
+.my_contacts_hidden {
+    display: none;
+}
+.greeting_hidden {
+    display: none;
+}
+//Всплывающее окно
+.popup{
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    top: 0;
+    left:0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+.popup_body{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+.popup_content{
+    background-color: #fff;
+    color: #000;
+    max-width: 1000px;
+    max-height: 800px;
+    width: max-content;
+    height: max-content;
+    padding: 30px;
+    position: relative;
+    opacity: 0;
+    transform: translate(0px, -100%);
+    transition: all 0.8s ease 0s;
+    border-radius: 10px;
+}
+.close_button{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.cl-btn-7 {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    cursor: pointer;
+}
+.cl-btn-7:before {
+    content: '+';
+    font-family: 'Nunito', sans-serif;
+    color: #337AB7;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(45deg);
+    font-size: 50px;
+    line-height: 1;
+    top: -5px;
+    left: 6px;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+.cl-btn-7:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: #337AB7;
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+    transform: scale(0.01);
+}
+.cl-btn-7:hover:after {
+    transform: scale(1);
+}
+.cl-btn-7:hover:before {
+    transform: scale(0.8) rotate(45deg);
+    color: #fff;
+}
+.popup_title{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.popup.popup_open{
+    opacity: 1;
+    visibility: visible;
+}
+.popup.popup_open .popup_content{
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    opacity: 1;
+}
+//отображение объявлений
+.sale{
+
+}
+.sale_body{
+    height: 111px;
+}
+.sale_inform{
+    height: max-content;
+}
+.sale_description{
+    height: 50px;
+    overflow: hidden;
+    text-align: justify;
+}
+

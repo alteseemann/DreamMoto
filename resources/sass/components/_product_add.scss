@@ -1,0 +1,11 @@
+.product-add {
+  margin-bottom: 20px;
+  .lat-generate {
+    color: $blue;
+    cursor: pointer;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

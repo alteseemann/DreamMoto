@@ -1,0 +1,39 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// mdbootstrap pro
+//@import '~mdbpro/css/mdb.css';
+//@import '~mdbpro/css/bootstrap.css';
+//@import '~mdbpro/scss/mdb';
+
+//Алерты
+@import "~toastr/toastr";
+
+//Swiper
+@import "~swiper/css/swiper.css";
+
+//summernote
+@import "~summernote/dist/summernote.css";
+
+//vue-multiselect
+@import "~vue-multiselect/dist/vue-multiselect.min.css";
+
+// FontAwesome
+@import '../../fontawesome5/scss/fontawesome';
+//@import '../../fontawesome5/scss/regular';
+//@import '../../fontawesome5/scss/solid';
+//@import '../../fontawesome5/scss/brands';
+@import '../../fontawesome5/scss/light';
+
+@import '~vue-resize/dist/vue-resize.css';
+
+// Стили
+@import 'main';
+

@@ -1,0 +1,50 @@
+.sale-bg{
+    padding: 5px 5px 5px 5px;
+    background: white;
+    box-shadow: 0 0 10px #969696;
+    width: 80%;
+    position: relative;
+}
+.sale_parameter{
+    font-family: "Nunito", sans-serif;
+    padding: 5px 30px 5px 30px;
+}
+.sale-price{
+    position: absolute;
+    background: #3490dc;
+    color: white;
+    z-index: 10;
+    font-size: 1.5rem;
+    text-align: justify;
+    font-weight: bold;
+    width: 170px;
+    padding: 5px;
+    height: 40px;
+}
+.sale-price:before{
+    border: 20px solid transparent;
+    border-left: 20px solid #3490dc;
+    border-top: 20px solid #3490dc;
+    position: absolute;
+    display: block;
+    margin-top: -5px;
+    color: transparent;
+    margin-left: 165px;
+    width: 0;
+    content: 'HI';
+    height: 0;
+    z-index: 11;
+}
+.sale-catalog{
+    position: absolute;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    margin-left: 90%;
+    margin-top: 58%;
+}
+.sale-catalog:hover{
+    width: 50px;
+    height: 50px;
+}
+
